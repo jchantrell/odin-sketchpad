@@ -1,0 +1,26 @@
+html, body  {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: thistle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cell {
+    height: 25px;
+    width: 25px;
+    border-style: solid;
+    border-width: 1px;
+    background: white;
+}
