@@ -13,6 +13,10 @@ function createCell(amount) {
     return cell;
 }
 
+function scaleCell(amount) {
+    cell = document.querySelector('.cell').textContent = `Total: ${scoreboard.total}`; 
+}
+
 // create grid with number input
 function createGrid(number){
     multiply = number * 16;
@@ -26,8 +30,10 @@ function createGrid(number){
 }
 
 function clearGrid(){
-    createCell.cell.style.background = "purple";  
-}
+    cells = document.querySelectorAll('.cell')
+    cells.forEach(cells => {
+    cells.style.background = "white";}
+)}
 
 
-createGrid(42)
+createGrid(78)
