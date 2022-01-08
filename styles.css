@@ -1,13 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 html, body  {
     height: 100%;
+    font-family: Robotica;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 body {
     margin: 0;
     background: thistle;
+}
+
+.reset {
+    height: 45px;
+    width: 45px;
+
+}
+
+.cell-colour {
     display: flex;
+    gap: 5px;
+}
+
+.red, .orange, .yellow, .green, .blue, .purple, .pink {
+    height: 40px;
+    width: 40px;
+}
+
+.header {
+    text-align: center;
+    display: flex;
+    font-weight: 800;
+    font-size: 28px;
+    background: darkslateblue;
+    padding: 25px;
+    color: whitesmoke;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.title {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: italic;
+}
+
+.menu-container {
+    display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .grid {
@@ -17,6 +67,16 @@ body {
     flex-wrap: wrap;
 }
 
+.grid-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden
+}
+
 .cell {
     height: 25px;
     width: 25px;
@@ -24,3 +84,69 @@ body {
     border-width: 1px;
     background: white;
 }
+
+.red {
+    background: crimson;
+}
+
+.orange {
+    background: coral;
+}
+
+.yellow {
+    background: gold;
+}
+
+.green {
+    background: forestgreen;
+}
+
+.blue {
+    background: dodgerblue;
+}
+
+.purple {
+    background: darkviolet;
+}
+
+.pink {
+    background: deeppink;
+}
+
+
+.slide-container {
+    width: 100%; 
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+.gridsize, .cellsize {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 100%; 
+    height: 25px; 
+    background: #F3E5F5;
+    outline: none; 
+    opacity: 0.8; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+  }
+ 
+.cellsize:hover, .gridsize:hover {
+    opacity: 1; 
+  }
+
+.cellsize::-webkit-slider-thumb, .gridsize::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 35px; 
+    height: 35px; 
+    background: deeppink;
+    border-style: solid;
+    border-color: deeppink;
+    border-radius: 50%;
+    cursor: pointer; 
+  }
