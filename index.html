@@ -6,11 +6,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sketchpad</title>
 </head>
 <body>
-    <div class="grid">
+    <div class="header">
+        <div class="title">Sketchpad</div>
+        <div class="menu-container">
+            <div></div>
+        <div class="cell-colour">
+            <input type="button" class="red">
+            <input type="button" class="orange">
+            <input type="button" class="yellow">
+            <input type="button" class="green">
+            <input type="button" class="blue">
+            <input type="button" class="purple">
+            <input type="button" class="pink">
+        </div>
+        </div>
+        <div class="slide-container">
+            <div>
+                <input type="range" class="cellsize" name="cellsize" min="10" max="100" step="10">
+            </div>
+        </div>
+        <div class="slide-container">
+            <div>
+                <input type="range" class="gridsize" name="gridsize" min="10" max="500" step="10">
+            </div>
+        </div>
+        <div class="menu-container">
+            <div>Reset</div>
+            <input type="button"class="reset">
+        </div>
+    </div>
 
+    <div class="grid-container">
+        <div class="grid"></div>
     </div>
     
 </body>
