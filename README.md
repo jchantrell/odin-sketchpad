@@ -1,6 +1,6 @@
 To do:
 
-* Fix scaling issue
+* Fix scaling issue (rework to grid?)
 * Implement rainbow mode
 * Implement fade trail effect
 * Implement colour picker 
